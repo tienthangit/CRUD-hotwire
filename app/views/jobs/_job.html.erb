@@ -1,0 +1,17 @@
+<div id="<%= dom_id job %>" class= "mt-4" >
+  <p class="my-5 flex items-center">
+    <strong class="block font-medium mb-1 mr-2">Title:</strong>
+    <%= job.title %>
+  </p>
+
+  <p class="my-5 flex items-center">
+    <strong class="block font-medium mb-1 mr-2">Description:</strong>
+    <%= job.description %>
+  </p>
+
+  <p>
+    <%= link_to "Show", job, class: "border ml-2 rounded-lg p-3 bg-gray-100 inline-block font-medium" %>
+  </p>
+
+  <%= button_to "Destroy", job, method: :delete, class: "border mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+</div>
